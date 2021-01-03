@@ -1,0 +1,133 @@
+
+@media only screen and (max-width: 1140px){
+
+    .logo {
+        width: 25%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        height: 447px;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+
+    #search{
+        width: 100%;
+    }
+    .burger{
+    display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .section{
+        height: 485px;
+        flex-direction: column-reverse;
+    }
+    /* .section-left{
+        flex-direction: column;
+    } */
+    .text-big{
+        text-align: center;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+    .thumbnail img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .paras {
+    padding: 0px;
+    }
+
+
+    .firstSection{
+        height: 90vh;
+    }
+    .secondHalf {
+        width: 30%;
+        margin-top: 14%;
+    }
+
+    .container .image h1{
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 500px){
+  
+    .logo {
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .container{
+        column-count: 3;
+    }
+
+    .section {
+    height: 730px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    }
+}
+
+@media only screen and (max-width: 420px){
+  
+    .logo {
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .container{
+        column-count: 2;
+    }
+    .container .image h1{
+        font-size: 12px;
+    }
+
+    .section {
+    height: 730px;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    }
+
+    .container .image h1{
+        font-size: 20px;
+    }
+}

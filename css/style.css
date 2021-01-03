@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*        Navbar                */
+
+.logo{
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.logo img{
+    width: 33%;
+    border: 2px solid rgb(163, 163, 163);
+    border-radius: 50%;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.nav-list{
+    width: 70%;
+    align-items: center;
+    display: flex;
+
+}
+.nav-list li{
+  list-style: none;
+  padding: 24px 30px;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Ubuntu';
+}
+.nav-list li a:hover{
+    color: gray;
+}
+
+.rightNav{
+    width: 30%;
+    text-align: right;
+    padding: 0 23px;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 9px;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url('../images/img1.gif');
+    background-size: cover;
+    background-blend-mode: darken;
+
+}
+
+/*    NavBar Ends    */
+
+
+/*    First Section       */
+
+.firstSection{
+    height: 60vh;
+}
+
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 70%;
+}
+
+.firstHalf{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.secondHalf{
+    width: 30%;
+}
+
+.secondHalf img{
+    width: 70%;
+    border: 4px solid white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+}
+
+.text-big{
+    font-size: 33px;
+}
+.text-small{
+    font-size: 17px;
+}
+
+.btn{
+    padding: 6px 17px;
+    margin: 5px 0;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-small{
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+
+/*    First Section Ends   */
+
+/*   Second Section Start     */
+
+.section{
+    height: 325px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.section-left{
+    flex-direction: row-reverse;
+}
+
+.paras{
+    padding: 0 65px;
+}
+
+.sectionTag{
+    padding: 12px 0;
+}
+
+.sectionSubTag{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.thumbnail img{
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 14px;
+
+}
+
+
+
+/*    Second Section Ends     */
+
+/*    Contact Section Start     */
+
+.contact{
+    background-color: #f6f5f4;
+    height: 670px;
+}
+.text-center{
+
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+}
+
+.form{
+    max-width: 62%;
+    margin: 25px auto;
+}
+
+.form-input{
+    margin: 14px 0;
+    padding: 5px 13px;
+    width: 100%; 
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact button{
+    cursor: pointer;
+    background: #0f3959;
+    color: white;
+    border: none;
+    max-width: 100px;
+    
+} 
+
+/*    Contact Section Ends     */
+
+/*    Image Gallery Start     */
+
+.projects{
+    margin-left: 20px;
+    font-size: 13px;
+    font-family: 'Ubuntu';
+    color: #8eaaf7;
+}
+
+.projects:hover{
+    font-size: 18px;
+    transition: 0.2s ease-out;
+    color: rgb(24, 79, 230);
+}
+
+.container{
+    position: relative;
+    column-count: 4;
+    padding: 20px;
+}
+.image{
+    display: inline-block;
+    margin-top: 10px;
+    overflow: hidden;
+    border-radius: 150px;
+}
+img{
+    width: 100%;
+    transition: 0.25s ease-in-out;
+}
+.image:hover img{
+    transform: scale(1.1);
+}
+.container .image h1{
+    position: absolute;
+    padding: 5px;
+    margin: 5px;
+    font-size: 25px;
+    background: #5d5d5d;
+    color: white;
+    border-radius: 5px;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.25s ease-in-out;
+}
+
+.image:hover h1{
+    opacity: 0.5;
+}
+
+
+/*    Image Gallery Ends     */
+
+
+
+/*    Footer Section Start    */
+.bgclr{
+    background-color: #000;
+}
+.text-footer{
+    text-align: center;
+    padding: 15px 0;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+/*    Footer Section Ends     */
+
+
